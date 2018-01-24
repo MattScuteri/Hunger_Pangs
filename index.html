@@ -1,118 +1,125 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Hunger Pangs</title>
-	<!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC|Sedgwick+Ave+Display" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-</head>
-<body>
-	<div class="container" id="landing-page">
-		<div class="row">
-			<div class="col-md-12 col-sm-12 col-12" id="heading">
-				<h1 id="title">
-				<i class="fa fa-cutlery" aria-hidden="true"></i>  HUNGER PANGS  
-				<i class="fa fa-cutlery" aria-hidden="true"></i></h1>
-			</div>	
-		</div>		
-    	<div class="row">	
-			<div class="col-md-12 col-sm-12 col-12">
-				<input type="text" name="address" id="user-input" placeholder="Enter your location" required >
-				<button class="btn btn-info" id="add-btn" type="submit" value="submit">I am Hungry</button>
-			</div>
-		</div>
-  	</div>
+ <!DOCTYPE html>
+  <html>
+    <head>
+       <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      
+      <!--Import CSS-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+      <link rel="stylsheet" href="assets/css/materialize.css"
+    
+    </head>
+    <body>
+        <!-- landing-pane -->
+            <div class="container center" id="landing-page">
+                    <br><br><br><br><br>
+                        <h1 id="title"> 
 
-	<div class="container" id="results-page">
-		<div class ="row" id="results-top">
-			<div class="col-md-1 col-sm-1 col-1" id="div-weather">
-			</div>
-			<div class="col-md-10 col-sm-10 col-10">
-				<input type="text" name="address" id="page-input" placeholder="Enter location" required >
-				<button class="btn btn-info" id="page-btn" type="submit" value="submit">Still Hungry</button>
-				<div class="btn-group">
-					<button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" 
-					id="selected-value">
-					10
-					</button>
-					<div class="dropdown-menu" id="number-menu">
-						<a class="dropdown-item" href="#">5</a>
-						<a class="dropdown-item" href="#">10</a>
-						<a class="dropdown-item" href="#">15</a>
-					</div>
-				</div>
-				<div class="btn-group">
-					<button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" 
-					id="selected-food">
-					Cuisine
-					</button>
-					<div class="dropdown-menu" id="food-menu">
-						<a class="dropdown-item" href="#">All</a>
-						<a class="dropdown-item" href="#">Italian</a>
-						<a class="dropdown-item" href="#">Mexican</a>
-						<a class="dropdown-item" href="#">Indian</a>
-						<a class="dropdown-item" href="#">Chinese</a>
-						<a class="dropdown-item" href="#">Cafe</a>
-					</div>
-				</div>
-			</div>
+                        <i class="large material-icons">local_dining</i> HUNGER PANGS  
+                        <i class="large material-icons">local_dining</i></h1>
+                
+                <div class="center row">    
+                    <div class="input-field">
+                        <input type="text" name="address" id="user-input" placeholder="Enter your location" required>
+                        <button class="btn waves-effect waves-light red" id="add-btn" type="submit" value="submit">Search!</button>
+                    </div>
+                    
+                </div>
+              </div>
+        <!-- end landing-pane -->
 
-			<div class="col-md-1 col-sm-1 col-1">	
-				<button type="button"  data-toggle="modal"  data-target="#bookmark-modal" class="btn btn-bookmark">
-				<i class="fa fa-bookmark fa-2x" aria-hidden="true" style='color: red'></i>
-				</button>
-			</div>
-		</div>
-		<div class="row" id="results-bottom">
-			<div class="col col-md-7 col-sm-12 col-12" id="content-map">	
-				<div id="map"></div>			
-			</div>
-			<div class="col col-md-4 col-sm-12 col-12" id="content-results">	
-			</div>
-		</div>
-		<div class="row" id="footer">
-			<div class="col-md-11 col-sm-11 col-11">
-				<p>Made with <i class="fa fa-heart" aria-hidden="true"></i> by the <i class="fa fa-cutlery" aria-hidden="true"></i> Hungry Bunch! <i class="fa fa-cutlery" aria-hidden="true"></i> </p>
-			</div>
 
-			<div class="col-md-1 col-sm-1 col-1" id="back2Top"><i class="fa fa-home fa-2x" aria-hidden="true"></i></div>
-		</div>
-	</div>
 
-	<div class="modal" id="bookmark-modal" tabindex="-1" role="dialog">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <div class="modal-header" id="bookmark-header">
-	        <h4 class="modal-title">Your BookMarks</h4>
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	          <span aria-hidden="true">&times;</span>
-	        </button>
-	      </div>
-	      <div class="modal-body" id="bookmarks-body">
-	      </div>
-	    </div>
-	  </div>
-	</div>
 
-	 <!-- jQuery first, then Tether, then Bootstrap JS. -->
-	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<div class="container" id="results-page">
+  
+  <div class ="row" id="results-top">
+      
+      <div class="col s12 m4 l2" id="div-weather"></div>
+      
+      <div class="btn-group">
+        <div class="s12 m4 l8">
+          <input type="text" name="address" id="page-input" placeholder="Enter new location" required>
+          <button class="btn btn-info" id="page-btn" type="submit" value="submit">search</button>
+      
+
+        
+          <a class="dropdown-button btn red" href="#" data-activates="number-menu">10</a>
+
+          <ul id="number-menu" class="dropdown-content">
+              <li><a class="dropdown-item" href="#">5</a></li>
+              <li><a class="dropdown-item" href="#">10</a></li>
+              <li><a class="dropdown-item" href="#">15</a></li>
+              </ul>
+
+
+          <a class="dropdown-button btn red" href="#" data-activates="food-menu">Cuisine</a>
+            
+            <ul id="food-menu" class="dropdown-content">
+              <li><a class="dropdown-item" href="#">All</a></li>
+              <li><a class="dropdown-item" href="#">Italian</a></li>
+              <li><a class="dropdown-item" href="#">Mexican</a></li>
+              <li><a class="dropdown-item" href="#">Chinese</a></li>
+              <li><a class="dropdown-item" href="#">Cafe</a></li>
+            </ul> 
+
+          <!-- favorites -->
+            <a class="waves-effect waves-black btn black modal-trigger" href="bookmark-modal"><i class="large material-icons">bookmark</i></a>
+
+              <div id="bookmark-modal" class="modal bottom-sheet">
+              <div class="modal-content">
+                <h4>Your Bookmarks</h4>
+                <div class="modal-body" id="bookmarks-body"></div>
+                </div>
+
+              <div class="modal-footer">
+                <a class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+              </div>
+            </div>
+                  
+
+            <div class="row" id="results-bottom">
+              <div class="col s7" id="content-map"> 
+                <div id="map"></div>
+                </div> 
+                     		
+                <div class="col s5" id="content-results"> 
+                  <div id="results"></div>  
+
+
+            
+
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-copyright">
+            <div class="container">
+            Made with love by the Hungry Bunch <i class="small material-icons">local_dining</i></div>
+          </div>
+
+</div>
+</div>
+     
+       <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script type="text/javascript" src="assets/js/app.js"></script>
-	<script type="text/javascript" src="assets/js/map.js"></script>
-	<script type="text/javascript" src="assets/js/yelp.js"></script>
-	<script type="text/javascript" src="assets/js/key.js"></script>
-	<script type="text/javascript" src="assets/js/weather.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/materialize.min.js"></script>
 
-	<script async defer
-	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAy5nfc8TusPKRVU-vuf6S8XEE9Vk5spMs&callback=initMap">
-	</script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+    <script type="text/javascript" src="assets/js/map.js"></script>
+    <script type="text/javascript" src="assets/js/yelp.js"></script>
+    <script type="text/javascript" src="assets/js/key.js"></script>
+    <script type="text/javascript" src="assets/js/weather.js"></script>
 
-</body>
-</html>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAy5nfc8TusPKRVU-vuf6S8XEE9Vk5spMs&callback=initMap">
+    </script>
+    </body>
+    </html>

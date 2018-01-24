@@ -2,7 +2,6 @@ body{
     margin: 0 auto;
     font-family:'Playfair Display SC', 'Arial Black',  serif;
 }
-
 #landing-page{
     min-height: 100vh;
     min-width: 100vw;
@@ -11,7 +10,6 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 #results-page{
     min-height: 100vh;
     min-width: 100vw;
@@ -19,86 +17,79 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 #results-page .btn-group{
-    margin-left: 20px;
+    margin-left: 10px;
+    
 }
-
 .bookmark-icon{
     width: 10px;
     height: 10px;
 }
 #user-input {
-    margin-left: 435px;
-    width : 400px;
+   /* margin-left: 435px; */
+    color: white;
+    width : 300px;
     padding: 10px;
 }
-
 #page-input{
+    color: white;
     width : 400px;
     padding: 10px;
 }
-
 #page-btn,
 #add-btn {
     background-color: red;
-    width: 120px;
+    text-align: center;
+   /* width: 150px;
     padding: 10px;
-    margin-left: 20px;
+    margin-left: 20px;*/
 }
-
 #heading{
     margin-top: 250px;
     margin-bottom : 20px;
 }
-
 #title {
     color: white;
     font-size: 85px;
     text-align: center;
     font-weight: bold;
 }
-
 #results-top{
     height: 100px;
     padding: 20px;
     text-align: center;
     border-bottom : 3px solid #fff;
+    margin-bottom: 10px;
 }
-
 #results-bottom{
     margin: 0 auto;
 }
-
-#results-bottom .col{
+/* #results-bottom .col{
     margin : 10px 15px;
     padding : 0px;
-}
+} */
 
 #content-results,
 #content-map{
+    float: left;
     height: 530px;
     border: 5px solid #fff;
     color: #fff;
 }
-
 #content-results{
     overflow-y: scroll;
 }
-
 .td-results-r{
     display: block;
     width: 20px;
     height: 10px;
     background: url('../images/star.png') no-repeat;
 }
-
 #map {
     height: 100%;
     width: 100%;
     background-color: grey;
 }
-
 .infotext{
     color: red;
     font-weight: bold;
@@ -106,16 +97,13 @@ body{
     text-transform: uppercase;
     font-family:'Playfair Display SC', 'Arial Black',  serif;
 }
-
 .directionsDiv{
     background-color: #fff;
 }
-
 .td-results-l{
     text-align: left;
     width: 75%;
 }
-
 .td-results-ri{
     text-align: right;
     width: 25%;
@@ -123,76 +111,57 @@ body{
 #results-name{    
     font-size: 22px;
 }
-
 #results-distance{
     font-size : 14px;
 }
-
 a:link {
     color: red
 }
-
 #selected-value,
 #selected-food{
     background-color: red;
     color: #fff;
 }
-
 .btn-bookmark{
     width: 50px;
     background-color: #000;
 }
-
 .img-bookmark{
     width: 50px;
 }
-
 .td-results-r{
     display: block;
     width: 20px;
     height: 10px;
     background: url('../images/star.png') no-repeat;
 }
-
 #food-menu,
 #number-menu{
     min-width: 1rem;
 }
-
 .restaurant-img{
     height: 100px;
     width: 150px;
 }
-
-#footer{
-    color: #fff;
+.footer-copyright{
+    color: white;
     text-align: center;
     font-size: 14px;
 }
-
-
 #bookmark-header{
     background-color: red;
     color: #fff;
 }
-
-
 #bookmarks-body{
     background-color: #000;
     color: #fff;
     font-size : 20px;
 }
-
 .weather{
     font-size: 18px;
     color: red;
 }
-
 .fa-heart{
     color: red;
-  
-}
-#add-btn:hover {
-    background: gray;
 }
 
